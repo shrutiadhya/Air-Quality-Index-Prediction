@@ -12,13 +12,13 @@ import sys
 
 
 def retrieve_html():
-    for year in range(2013,2021):
+    for year in range(2013,2019):
         for month in range(1,13):
             if(month<10):
-                url='http://en.tutiempo.net/climate/0{}-{}/ws-428090.html'.format(month
+                url='http://en.tutiempo.net/climate/0{}-{}/ws-432950.html'.format(month
                                                                           ,year)
             else:
-                url='http://en.tutiempo.net/climate/{}-{}/ws-428090.html'.format(month
+                url='http://en.tutiempo.net/climate/{}-{}/ws-432950.html'.format(month
                                                                           ,year)
             texts=requests.get(url)
             text_utf=texts.text.encode('utf=8')
